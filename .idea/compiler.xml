@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tutorial_cloud_bookclient" />
+        <module name="tutorial_cloud_configurer" />
+        <module name="tutorial_cloud_consul" />
+        <module name="tutorial_cloud_data" />
+        <module name="tutorial_cloud_feign" />
+        <module name="tutorial_cloud_gateway" />
+        <module name="tutorial_cloud_server" />
+        <module name="tutorial_cloud_userclient" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="7" />
+  </component>
+</project>

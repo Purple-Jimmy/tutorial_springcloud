@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.tutorial</groupId>
+  <artifactId>tutorial_springcloud</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>tutorial_cloud_configurer</module>
+    <module>tutorial_cloud_consul</module>
+    <module>tutorial_cloud_feign</module>
+    <module>tutorial_cloud_gateway</module>
+    <module>tutorial_cloud_server</module>
+    <module>tutorial_cloud_userclient</module>
+    <module>tutorial_cloud_bookclient</module>
+    <module>tutorial_cloud_data</module>
+  </modules>
+
+  <name>tutorial_springcloud</name>
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+
+  </dependencies>
+</project>
