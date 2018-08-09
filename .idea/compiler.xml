@@ -16,6 +16,6 @@
         <module name="tutorial_cloud_userclient" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="7" />
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>

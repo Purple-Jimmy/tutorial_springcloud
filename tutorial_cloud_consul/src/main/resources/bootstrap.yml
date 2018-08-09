@@ -1,0 +1,10 @@
+server:
+  port: 8888
+  application:
+    name: register-server # 注册中心的名字
+
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8888
