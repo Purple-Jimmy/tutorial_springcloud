@@ -1,7 +1,7 @@
 server:
-  port: 8888
+  port: 2222
   application:
-    name: consul-server #服务名字
+    name: user-server #服务名字
 
 spring:
   cloud:
@@ -10,9 +10,9 @@ spring:
       port: 37170
       discovery:
         enabled: true
-        service-name: consul-client #注册中心注册的服务名字
+        service-name: user-client #注册中心注册的服务名字
        # health-check-path: /health
         health-check-interval: 10s
-        instance-id: consul-server
+        instance-id: user-server
         tags: dev,hello
 

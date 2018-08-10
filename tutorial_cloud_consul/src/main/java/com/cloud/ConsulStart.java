@@ -20,9 +20,9 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableDiscoveryClient
 @RestController
-public class RegisterCenterStart {
+public class ConsulStart {
     public static void main(String[] args) {
-        SpringApplication.run(RegisterCenterStart.class,args);
+        SpringApplication.run(ConsulStart.class,args);
     }
 
     @RequestMapping("/")
