@@ -6,5 +6,5 @@ server:
 spring:
   cloud:
     consul:
-      host: localhost
-      port: 8888
+      host: 36.111.193.248
+      port: 37170
