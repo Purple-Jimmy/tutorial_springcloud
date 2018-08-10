@@ -1,10 +1,18 @@
 server:
   port: 8888
   application:
-    name: register-server # 注册中心的名字
+    name: consul-client #注册中心的名字
 
 spring:
   cloud:
     consul:
       host: 36.111.193.248
       port: 37170
+      discovery:
+        enabled: true
+        service-name: consul-client
+       # health-check-path: /health
+        health-check-interval: 10s
+        instance-id: consul-server-register-center
+        tags: dev,hello
+
