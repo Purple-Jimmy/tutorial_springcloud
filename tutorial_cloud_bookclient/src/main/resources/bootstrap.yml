@@ -10,7 +10,7 @@ spring:
       port: 37170
       discovery:
         enabled: true
-        service-name: book-client #注册中心注册的服务名字
+        service-name: book-server #注册中心注册的服务名字
        # health-check-path: /health
         health-check-interval: 10s
         instance-id: book

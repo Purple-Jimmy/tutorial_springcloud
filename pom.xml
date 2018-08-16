@@ -26,20 +26,21 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <cloud.version>2.0.1.RELEASE</cloud.version>
+    <cloud.version>2.0.4.RELEASE</cloud.version>
     <consul.version>2.0.1.RELEASE</consul.version>
-    <hystrix.version>2.0.1.RELEASE</hystrix.version>
-    <stream.version>2.0.1.RELEASE</stream.version>
+    <hystrix.version>2.0.4.RELEASE</hystrix.version>
+    <stream.version>2.0.4.RELEASE</stream.version>
     <gateway.version>2.0.1.RELEASE</gateway.version>
-    <sleuth.version>2.0.1.RELEASE</sleuth.version>
-    <config.version>2.0.1.RELEASE</config.version>
+    <sleuth.version>2.0.4.RELEASE</sleuth.version>
+    <config.version>2.0.4.RELEASE</config.version>
     <webflux.version>2.0.0.RC1</webflux.version>
+    <feign.version>2.0.1.RELEASE</feign.version>
   </properties>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.0.3.RELEASE</version>
+    <version>2.0.4.RELEASE</version>
     <relativePath/>
   </parent>
 
@@ -90,24 +91,29 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
-    <!--lombok -->
+    <!--lombok-->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.16.18</version>
     </dependency>
-    <!--consul -->
+    <!--consul-->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-consul-discovery</artifactId>
       <version>${consul.version}</version>
     </dependency>
-    <!-- 健康检查依赖此包-->
+    <!--健康检查依赖此包-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
-
+    <!--网关-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-gateway</artifactId>
+      <version>${gateway.version}</version>
+    </dependency>
   </dependencies>
 
  <!-- <repositories>

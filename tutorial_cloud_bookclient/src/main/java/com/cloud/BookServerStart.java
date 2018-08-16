@@ -3,8 +3,7 @@ package com.cloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * book 服务
@@ -13,15 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@RestController
+@EnableFeignClients
 public class BookServerStart {
 
     public static void main(String[] args) {
         SpringApplication.run(BookServerStart.class,args);
     }
 
-    @RequestMapping("/")
-    public String home() {
-        return "Hello book";
-    }
+
 }
