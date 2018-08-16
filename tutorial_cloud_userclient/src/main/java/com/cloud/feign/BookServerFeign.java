@@ -5,12 +5,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
- * @Author: jimmy
- * @Date: 2018/8/16
+ * @author jimmy
+ * @date 2018/8/1622:58
  */
-@FeignClient(name="book-server")
+@FeignClient("server-book")
 @Service
-public interface BookFeignService {
-    @GetMapping("/book")
-    String book();
+public interface BookServerFeign {
+
+    @GetMapping("/queryBookFeign")
+    String queryBookFeign();
 }

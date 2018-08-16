@@ -1,7 +1,7 @@
 server:
   port: 1111
   application:
-    name: book-server #服务名字
+    name: server-book #服务名字
 
 spring:
   cloud:
@@ -13,6 +13,6 @@ spring:
         service-name: book-server #注册中心注册的服务名字
        # health-check-path: /health
         health-check-interval: 10s
-        instance-id: book
+        instance-id: book-server-id
         tags:
 

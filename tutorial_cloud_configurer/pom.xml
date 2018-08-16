@@ -21,10 +21,10 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-            <version>${config.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-config-server</artifactId>-->
+            <!--&lt;!&ndash;<version>${config.version}</version>&ndash;&gt;-->
+        <!--</dependency>-->
     </dependencies>
 </project>
