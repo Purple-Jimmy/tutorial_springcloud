@@ -11,7 +11,6 @@
   <modules>
     <module>tutorial_cloud_configurer</module>
     <module>tutorial_cloud_consul</module>
-    <module>tutorial_cloud_feign</module>
     <module>tutorial_cloud_gateway</module>
     <module>tutorial_cloud_server</module>
     <module>tutorial_cloud_userclient</module>
@@ -25,15 +24,16 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <cloud.version>2.0.4.RELEASE</cloud.version>
+    <cloud.version>2.0.1.RELEASE</cloud.version>
     <consul.version>2.0.1.RELEASE</consul.version>
-    <hystrix.version>2.0.4.RELEASE</hystrix.version>
-    <stream.version>2.0.4.RELEASE</stream.version>
+    <feign.version>2.0.1.RELEASE</feign.version>
+    <hystrix.version>2.0.1.RELEASE</hystrix.version>
+    <stream.version>2.0.1.RELEASE</stream.version>
     <gateway.version>2.0.1.RELEASE</gateway.version>
-    <sleuth.version>2.0.4.RELEASE</sleuth.version>
+    <sleuth.version>2.0.1.RELEASE</sleuth.version>
     <config.version>2.0.1.RELEASE</config.version>
     <webflux.version>2.0.0.RC1</webflux.version>
-    <feign.version>2.0.1.RELEASE</feign.version>
+
   </properties>
 
   <parent>

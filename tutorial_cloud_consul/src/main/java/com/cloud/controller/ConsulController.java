@@ -28,8 +28,9 @@ public class ConsulController {
         String services = "Services: " + discoveryClient.getServices();
         System.out.println(services);
         //Services: [book-client, consul, consul-server]
-        ServiceInstance serviceInstance = loadBalancerClient.choose("server-book");
-        System.out.println(serviceInstance);
+        ServiceInstance serviceInstance1 = loadBalancerClient.choose("server-book");
+        ServiceInstance serviceInstance2 = loadBalancerClient.choose("book-server");
+      //  System.out.println(serviceInstance);
         return services;
     }
 

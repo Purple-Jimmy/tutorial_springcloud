@@ -1,7 +1,7 @@
 server:
-  port: 7777
+  port: 1111
   application:
-    name: app-server #服务名字
+    name: server-book #服务名字
 
 spring:
   cloud:
@@ -10,9 +10,9 @@ spring:
       port: 8500
       discovery:
         enabled: true
-        service-name: app-client #注册中心注册的服务名字
+        service-name: book-server #注册中心注册的服务名字
        # health-check-path: /health
         health-check-interval: 10s
-        instance-id: app-server
-        tags: dev,hello
+        instance-id: book-server-id
+        tags:
 

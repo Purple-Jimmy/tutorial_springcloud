@@ -20,9 +20,9 @@ public class UserController {
 
     @GetMapping("/dc")
     public String dc() {
-        ServiceInstance serviceInstance = loadBalancerClient.choose("server-book");
-      //  String url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/showServers";
-        String url = "http://localhost:1111/showServers";
+        ServiceInstance serviceInstance = loadBalancerClient.choose("book-server");
+        String url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/queryBookFeign";
+      //  String url = "http://localhost:1111/queryBookFeign";
         System.out.println(url);
         return restTemplate.getForObject(url, String.class);
     }

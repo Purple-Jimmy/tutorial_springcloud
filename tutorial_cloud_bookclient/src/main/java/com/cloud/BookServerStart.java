@@ -18,6 +18,4 @@ public class BookServerStart {
     public static void main(String[] args) {
         SpringApplication.run(BookServerStart.class,args);
     }
-
-
 }

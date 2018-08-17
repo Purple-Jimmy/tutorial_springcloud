@@ -1,0 +1,18 @@
+server:
+  port: 2222
+  application:
+    name: server-user #服务名字
+
+spring:
+  cloud:
+    consul:
+      host: 36.111.193.248
+      port: 37170
+      discovery:
+        enabled: true
+        service-name: user-server #注册中心注册的服务名字
+       # health-check-path: /health
+        health-check-interval: 10s
+        instance-id: user-server-id
+        tags: dev,hello
+

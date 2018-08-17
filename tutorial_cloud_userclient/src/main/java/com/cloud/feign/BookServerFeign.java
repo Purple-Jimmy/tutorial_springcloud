@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @author jimmy
  * @date 2018/8/1622:58
  */
-@FeignClient("server-book")
+@FeignClient("book-server")
 @Service
 public interface BookServerFeign {
 

@@ -24,9 +24,9 @@ public class UserServerStart {
 
 * 配置文件 user-server和book-server分别向注册中心注册
 
-* user-server声明feign接口 server-book为book服务中yml配置的server.application.name
+* user-server声明feign接口 book-server为book服务在注册中心的名字
 ```
-@FeignClient("server-book")
+@FeignClient("book-server")
 @Service
 public interface BookServerFeign {
 
@@ -45,7 +45,6 @@ public class FeignController {
     @RequestMapping("/queryBook")
     public void queryBook(){
         String str = bookServerFeign.queryBookFeign();
-        System.out.println(str);
     }
 }
 ```

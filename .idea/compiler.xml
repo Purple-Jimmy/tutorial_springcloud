@@ -10,12 +10,13 @@
         <module name="tutorial_cloud_configurer" />
         <module name="tutorial_cloud_consul" />
         <module name="tutorial_cloud_data" />
-        <module name="tutorial_cloud_feign" />
         <module name="tutorial_cloud_gateway" />
         <module name="tutorial_cloud_server" />
         <module name="tutorial_cloud_userclient" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="tutorial_cloud_feign" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
