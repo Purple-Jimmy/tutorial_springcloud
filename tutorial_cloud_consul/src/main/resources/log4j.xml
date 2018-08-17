@@ -18,14 +18,14 @@
 
 
         <!--append:false 这个log每次运行程序会自动清空-->
-        <File name="autoClearLogFile" fileName="/Users/zhoucheng/tutorial_space/tutorial/logs/autoClearLog.log" append="false">
+        <File name="autoClearLogFile" fileName="/tutorial_space/tutorial/logs/autoClearLog.log" append="false">
             <PatternLayout pattern="${PATTERN}"/>
         </File>
 
         <!--info日志-->
-        <RollingFile name="springCloudFile" fileName="/Users/zhoucheng/tutorial_space/tutorial/logs/consulServer.log"
-                     filePattern="/Users/zhoucheng/tutorial_space/tutorial/logs/consulServer_%d{yyyy-MM-dd}.log.gz">
-            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+        <RollingFile name="springCloudFile" fileName="/tutorial_space/tutorial/logs/consulServer.log"
+                     filePattern="/tutorial_space/tutorial/logs/consulServer_%d{yyyy-MM-dd}.log.gz">
+            <!--控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch)-->
             <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="${PATTERN}"/>
             <Policies>
@@ -36,8 +36,8 @@
 
         <!--error日志-->
         <RollingFile name="springCloudErrorFile" fileName="/tutorial/logs/consulServerError.log"
-                     filePattern="/Users/zhoucheng/tutorial_space/tutorial/logs/consulServerError_%d{yyyy-MM-dd}.log.gz">
-            <!--控制台只输出level及以上级别的信息（onMatch）,其他的直接拒绝（onMismatch）-->
+                     filePattern="/tutorial_space/tutorial/logs/consulServerError_%d{yyyy-MM-dd}.log.gz">
+            <!--控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch)-->
             <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="${PATTERN}"/>
             <Policies>
@@ -49,7 +49,7 @@
 
 
 
-    <!--定义哪些类使用那些Appender，并可以设置日志级别-->
+    <!--定义哪些类使用那些Appender,并可以设置日志级别-->
     <loggers>
         <!--
          <logger name="com.roncoo.education" level="debug" />

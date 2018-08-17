@@ -23,8 +23,8 @@
         </File>
 
         <!--info日志-->
-        <RollingFile name="springCloudFile" fileName="./tutorial/logs/springCloudConfigurer.log"
-                     filePattern="./tutorial/logs/springCloudConfigurer_%d{yyyy-MM-dd}.log.gz">
+        <RollingFile name="springCloudFile" fileName="/tutorial/logs/springCloudConfigurer.log"
+                     filePattern="/tutorial/logs/springCloudConfigurer_%d{yyyy-MM-dd}.log.gz">
             <!--控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch)-->
             <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="${PATTERN}"/>
@@ -35,8 +35,8 @@
         </RollingFile>
 
         <!--error日志-->
-        <RollingFile name="springCloudErrorFile" fileName="./tutorial/logs/springCloudConfigurerError.log"
-                     filePattern="./tutorial/logs/springCloudConfigurerError_%d{yyyy-MM-dd}.log.gz">
+        <RollingFile name="springCloudErrorFile" fileName="/tutorial/logs/springCloudConfigurerError.log"
+                     filePattern="/tutorial/logs/springCloudConfigurerError_%d{yyyy-MM-dd}.log.gz">
             <!--控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch)-->
             <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="${PATTERN}"/>
