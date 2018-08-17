@@ -1,4 +1,4 @@
 spring:
   profiles:
-    active: star
+    active: dev
 

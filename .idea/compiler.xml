@@ -16,7 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="tutorial_cloud_feign" target="1.8" />
+      <module name="tutorial_cloud_feign" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
