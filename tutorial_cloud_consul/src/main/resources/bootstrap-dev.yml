@@ -16,3 +16,4 @@ spring:
         instance-id: consul-server-id
         tags: dev,hello
 
+

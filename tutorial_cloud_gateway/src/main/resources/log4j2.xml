@@ -18,13 +18,13 @@
 
 
         <!--append:false 这个log每次运行程序会自动清空-->
-        <File name="autoClearLogFile" fileName="/tutorial/logs/autoClearLog.log" append="false">
+        <File name="autoClearLogFile" fileName="./logs/autoClearLog.log" append="false">
             <PatternLayout pattern="${PATTERN}"/>
         </File>
 
         <!--info日志-->
-        <RollingFile name="springCloudFile" fileName="/tutorial/logs/bookServer.log"
-                     filePattern="/tutorial/logs/bookServer_%d{yyyy-MM-dd}.log.gz">
+        <RollingFile name="springCloudFile" fileName="./logs/gatewayServer.log"
+                     filePattern="./logs/gatewayServer_%d{yyyy-MM-dd}.log.gz">
             <!--控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch)-->
             <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="${PATTERN}"/>
@@ -35,9 +35,9 @@
         </RollingFile>
 
         <!--error日志-->
-        <RollingFile name="springCloudErrorFile" fileName="/tutorial/logs/bookServerError.log"
-                     filePattern="/tutorial/logs/bookServerError_%d{yyyy-MM-dd}.log.gz">
-            <!--控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch)-->
+        <RollingFile name="springCloudErrorFile" fileName="./logs/gatewayServerError.log"
+                     filePattern="./logs/gatewayServerError_%d{yyyy-MM-dd}.log.gz">
+            <!--控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch）-->
             <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="${PATTERN}"/>
             <Policies>

@@ -18,14 +18,14 @@
 
 
         <!--append:false 这个log每次运行程序会自动清空-->
-        <File name="autoClearLogFile" fileName="/tutorial/logs/autoClearLog.log" append="false">
+        <File name="autoClearLogFile" fileName="./logs/autoClearLog.log" append="false">
             <PatternLayout pattern="${PATTERN}"/>
         </File>
 
         <!--info日志-->
-        <RollingFile name="springCloudFile" fileName="/tutorial/logs/gatewayServer.log"
-                     filePattern="/tutorial/logs/gatewayServer_%d{yyyy-MM-dd}.log.gz">
-            <!--控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch)-->
+        <RollingFile name="springCloudFile" fileName="./logs/appServer.log"
+                     filePattern="./logs/appServer_%d{yyyy-MM-dd}.log.gz">
+            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
             <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="${PATTERN}"/>
             <Policies>
@@ -35,9 +35,9 @@
         </RollingFile>
 
         <!--error日志-->
-        <RollingFile name="springCloudErrorFile" fileName="/tutorial/logs/gatewayServerError.log"
-                     filePattern="/tutorial/logs/gatewayServerError_%d{yyyy-MM-dd}.log.gz">
-            <!--控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch）-->
+        <RollingFile name="springCloudErrorFile" fileName="./logs/appServerError.log"
+                     filePattern="./logs/appServerError_%d{yyyy-MM-dd}.log.gz">
+            <!--控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch)-->
             <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="${PATTERN}"/>
             <Policies>
@@ -49,7 +49,7 @@
 
 
 
-    <!--定义哪些类使用那些Appender,并可以设置日志级别-->
+    <!--定义哪些类使用那些Appender，并可以设置日志级别-->
     <loggers>
         <!--
          <logger name="com.roncoo.education" level="debug" />
