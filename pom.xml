@@ -120,11 +120,11 @@
       <version>${gateway.version}</version>
     </dependency>
     <!--webflux-->
-   <!-- <dependency>
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-webflux</artifactId>
       <version>${webflux.version}</version>
-    </dependency>-->
+    </dependency>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>

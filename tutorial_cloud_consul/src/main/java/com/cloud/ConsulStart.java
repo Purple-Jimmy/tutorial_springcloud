@@ -30,6 +30,7 @@ public class ConsulStart {
 
     @RequestMapping("/")
     public String home() {
+        log.info("hhhhhh");
         return "Hello world";
     }
 
