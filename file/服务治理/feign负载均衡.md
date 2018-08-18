@@ -24,7 +24,7 @@ public class UserServerStart {
 
 * 配置文件 user-server和book-server分别向注册中心注册
 
-* user-server声明feign接口 book-server为book服务在注册中心的名字
+* user-server声明feign接口 book-server为book服务在注册中心的名字 queryBookFeign为book服务提供的调用方法
 ```
 @FeignClient("book-server")
 @Service
@@ -35,7 +35,7 @@ public interface BookServerFeign {
 }
 ```
 
-* user-server调用
+* user-server调用  
 ```
 @RestController
 public class FeignController {

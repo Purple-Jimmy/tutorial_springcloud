@@ -22,4 +22,8 @@ public class BookController {
     }
 
 
+    @RequestMapping("/queryBookA")
+    public String queryBookA() {
+        return "query book A";
+    }
 }

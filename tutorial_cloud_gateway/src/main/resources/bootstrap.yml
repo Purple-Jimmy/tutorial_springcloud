@@ -1,18 +1,4 @@
-server:
-  port: 8080
-  application:
-    name: gateway-server #服务名字
-
 spring:
-  cloud:
-    consul:
-      host: 36.111.193.248
-      port: 37170
-      discovery:
-        enabled: true
-        service-name: gateway-client #注册中心注册的服务名字
-       # health-check-path: /health
-        health-check-interval: 10s
-        instance-id: gateway-server
-        tags: dev,hello
+  profiles:
+    active: dev
 

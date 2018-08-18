@@ -1,0 +1,32 @@
+server:
+  port: 8080
+  application:
+    name: server-gateway #服务名字
+
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        service-name: gateway-server #注册中心注册的服务名字
+       # health-check-path: /health
+        health-check-interval: 10s
+        instance-id: gateway-server-id
+        tags: dev,hello
+    gateway:
+      routes:
+      - id: host_route
+        uri: http://localhost:1111
+        predicates:
+        - Path=/book/**
+        filters:
+        - StripPrefix=1
+      - id: host_route
+        uri: http://localhost:2222
+        predicates:
+        - Path=/user/**
+        filters:
+        - StripPrefix=1
+
