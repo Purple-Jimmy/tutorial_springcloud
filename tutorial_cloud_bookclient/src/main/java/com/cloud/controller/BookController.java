@@ -1,5 +1,7 @@
 package com.cloud.controller;
 
+import com.cloud.service.BookService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class BookController {
+    @Autowired
+    private BookService bookService;
 
     @RequestMapping("/")
     public String home() {
@@ -26,4 +30,16 @@ public class BookController {
     public String queryBookA() {
         return "query book A";
     }
+
+
+    @RequestMapping("/queryHystrixBook")
+    public String queryHystrixBook() throws InterruptedException {
+        Thread.sleep(1000*10);
+        System.out.println("---hystrix-----");
+        return "query book hystrix";
+    }
+
+
+
+
 }
