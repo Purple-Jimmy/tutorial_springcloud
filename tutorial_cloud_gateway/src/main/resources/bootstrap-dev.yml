@@ -11,7 +11,7 @@ spring:
       discovery:
         enabled: true
         service-name: gateway-server #注册中心注册的服务名字
-       # health-check-path: /health
+        health-check-path: /health
         health-check-interval: 10s
         instance-id: gateway-server-id
         tags: dev,hello
@@ -19,6 +19,7 @@ spring:
       routes:
       - id: host_route
         uri: lb://book-server
+        order: 1111
         predicates:
         - Path=/book/**
         filters:
