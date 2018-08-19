@@ -18,7 +18,7 @@ spring:
     gateway:
       routes:
       - id: host_route
-        uri: http://localhost:1111
+        uri: lb://book-server
         predicates:
         - Path=/book/**
         filters:
