@@ -28,6 +28,7 @@
     <consul.version>2.0.1.RELEASE</consul.version>
     <feign.version>2.0.1.RELEASE</feign.version>
     <hystrix.version>2.0.1.RELEASE</hystrix.version>
+    <hystrixdashboard.version>1.4.5.RELEASE</hystrixdashboard.version>
     <stream.version>2.0.1.RELEASE</stream.version>
     <gateway.version>2.0.1.RELEASE</gateway.version>
     <sleuth.version>2.0.1.RELEASE</sleuth.version>
@@ -131,6 +132,7 @@
       <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
       <version>${hystrix.version}</version>
     </dependency>
+    <!--hystrix dashboard-->
   </dependencies>
 
  <!-- <repositories>

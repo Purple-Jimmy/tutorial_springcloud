@@ -17,17 +17,24 @@ spring:
         tags: dev,hello
     gateway:
       routes:
-      - id: host_route
+      - id: book_route
         uri: lb://book-server
         order: 1111
         predicates:
         - Path=/book/**
         filters:
         - StripPrefix=1
-      - id: host_route
+      - id: user_route
         uri: http://localhost:2222
         predicates:
         - Path=/user/**
         filters:
         - StripPrefix=1
+      - id: app_route
+        uri: http://localhost:7777
+        predicates:
+        - Path=/app/**
+        filters:
+        - StripPrefix=1
+
 

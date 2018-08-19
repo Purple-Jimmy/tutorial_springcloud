@@ -1,0 +1,18 @@
+server:
+  port: 7777
+  application:
+    name: app-server #服务名字
+
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        service-name: app-client #注册中心注册的服务名字
+       # health-check-path: /health
+        health-check-interval: 10s
+        instance-id: app-server
+        tags: dev,hello
+
