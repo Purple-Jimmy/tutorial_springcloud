@@ -11,8 +11,8 @@ spring:
       discovery:
         enabled: true
         service-name: app-server #注册中心注册的服务名字
-        health-check-path: /health
+        health-check-path: /actuator/health #actuator组件实现,也可自己实现
         health-check-interval: 10s
         instance-id: app-server-id
-        tags: dev,hello
+        tags: dev=jimmy,hello
 

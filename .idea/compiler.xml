@@ -13,6 +13,7 @@
         <module name="tutorial_cloud_gateway" />
         <module name="tutorial_cloud_server" />
         <module name="tutorial_cloud_userclient" />
+        <module name="tutorial_cloud_zipkin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">

@@ -16,6 +16,7 @@
     <module>tutorial_cloud_userclient</module>
     <module>tutorial_cloud_bookclient</module>
     <module>tutorial_cloud_data</module>
+    <module>tutorial_cloud_zipkin</module>
   </modules>
 
   <name>tutorial_springcloud</name>
@@ -31,10 +32,10 @@
     <hystrixdashboard.version>1.4.5.RELEASE</hystrixdashboard.version>
     <stream.version>2.0.1.RELEASE</stream.version>
     <gateway.version>2.0.1.RELEASE</gateway.version>
-    <sleuth.version>2.0.1.RELEASE</sleuth.version>
     <config.version>2.0.1.RELEASE</config.version>
     <webflux.version>2.0.1.RELEASE</webflux.version>
-
+    <zipkin.version>2.0.1.RELEASE</zipkin.version>
+    <sleuth.version>2.0.1.RELEASE</sleuth.version>
   </properties>
 
   <parent>
@@ -66,11 +67,11 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-log4j2</artifactId>
     </dependency>
-    <!--<dependency>
+    <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-web</artifactId>
       <version>2.10.0</version>
-    </dependency>-->
+    </dependency>
    <!-- <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
@@ -133,6 +134,13 @@
       <version>${hystrix.version}</version>
     </dependency>
     <!--hystrix dashboard-->
+    <!--zipkin-->
+
+   <!-- <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-sleuth</artifactId>
+      <version>${sleuth.version}</version>
+    </dependency>-->
   </dependencies>
 
  <!-- <repositories>
