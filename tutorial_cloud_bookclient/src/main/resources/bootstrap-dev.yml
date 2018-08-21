@@ -16,7 +16,7 @@ spring:
         instance-id: book-server-id
         tags:
   zipkin:
-    base-url: http://localhost:9411
+    base-url: http://36.111.193.248:9411
   sleuth:
     enabled: true
     sampler:

@@ -15,4 +15,9 @@ spring:
         health-check-interval: 10s
         instance-id: user-server-id
         tags: dev,hello
-
+  zipkin:
+    base-url: http://36.111.193.248:9411
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1 #采样率,值为[0,1]之间的任意实数 1代表100%采集报告
